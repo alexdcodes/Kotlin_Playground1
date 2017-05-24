@@ -21,7 +21,7 @@ fun main(args: Array<String>) {
 
     println("\tDeclared Number: " + fooNum)
 
-    data class DataClassExample (val x: Int, val y: Int, val z: Int, val a: String)
-    val fooData = DataClassExample(1, 1991 , 4, "Default User")
+    data class DataClassExample (val a: String, val x: Int, val y: Int, val z: Int)
+    val fooData = DataClassExample("Default User", 1, 1991 , 4)
     println(fooData) // => DataClassExample (x=1, y=2, z=4)
 }
