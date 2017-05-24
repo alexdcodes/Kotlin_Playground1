@@ -12,6 +12,13 @@ fun main(args: Array<String>) {
 
     val fooNum = 10 // declare a number
 
+    fun varargExample(vararg names: Int){
+        println("Argument has ${names.size} elements")
+    }
+    println("Marked with [vararg] Keyword to \nallow a variable number of arguments to be passed to a function\n")
+    varargExample()
+    varargExample(1)
+    varargExample(1,2,3) //=> has 3 elements
 
     fun welcome(name: String = "") : String {
         return "\nHello, $name!"
