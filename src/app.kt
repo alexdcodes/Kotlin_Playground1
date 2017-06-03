@@ -34,7 +34,10 @@ fun main(args: Array<String>) {
 
     data class DataClassExample (val a: String, val x: Int, val y: Int, val z: Int)
 
-    val fooData = DataClassExample("Default User", 1, 1991 , 4)
-    
+    val fooData = DataClassExample("Default User", 1, 1984 , 10)
+    val fooData2 = DataClassExample("Default User", 1, 1984 , 10)
+
+
     println(fooData) // => DataClassExample (a="Default User" x=1, y=1991, z=4)
+    println(fooData2)
 }
