@@ -25,7 +25,7 @@ fun main(args: Array<String>) {
 
 
     fun welcome(name: String = "") : String {
-        return "\nHello, $name!"
+        return "\nHello, $name!\n"
     }
 
         println(welcome("Default User"))
@@ -37,6 +37,13 @@ fun main(args: Array<String>) {
     val fooData = DataClassExample("Default User", 1, 1984 , 10)
     val fooData2 = DataClassExample("Default User", 1, 1984 , 10)
 
+    val dataCopy = fooData.copy(y = 100)
+
+        println("\ndataCopy:" + dataCopy)
+
+    val (a, b, c) = dataCopy
+
+        println("$a $b $c")
 
     println(fooData) // => DataClassExample (a="Default User" x=1, y=1991, z=4)
     println(fooData2)
