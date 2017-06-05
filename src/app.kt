@@ -1,7 +1,7 @@
 /**
  * Created by Alex Diker on 5/24/2017.
  *
- * Just playing around with kotlin, this is just a playground
+ * Just playing around with kotlin, this is just a playground // changed up and learned off a tutorial
  * Will continue to add information here as time goes on
  *
  */
@@ -83,7 +83,7 @@ fun main(args: Array<String>) {
     println(carList[1] + "\n" + carList[2])
 
     /*
-    Lets create a mutable list using mustableListOf
+    Lets create a mutable list using mutableListOf
     */
     println("\n" + "Motorcycle Company List:")
     val motorcycleMutableList = mutableListOf("Kawasaki", "Suzuki", "Honda")
@@ -93,4 +93,10 @@ fun main(args: Array<String>) {
     println("size of list: " + motorcycleMutableList.size)
     println(motorcycleMutableList[0] + "\n" +motorcycleMutableList[1] + "\n" + motorcycleMutableList[2] + "\n" + motorcycleMutableList[3])
     println(motorcycleMutableList[4] + "\n" + motorcycleMutableList[5])
+    println("\n")
+    
+    val exampleSet = setOf("Names", "Age", "Email")
+    println(exampleSet.contains("Names")) // show true
+    println(exampleSet.contains("Geographical_Location")) // show false
+
 }
