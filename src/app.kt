@@ -47,4 +47,14 @@ fun main(args: Array<String>) {
 
     println(fooData) // => DataClassExample (a="Default User" x=1, y=1991, z=4)
     println(fooData2)
+
+//mutable data class example
+    data class MutableDataClassExample (var q: Int, var w: Int, var e: Int)
+    val exampleMutableData = MutableDataClassExample(11, 1, 0)
+    with (exampleMutableData) {
+        q -= 2 // subtract two
+        w += 2 // add two
+        e --
+    }
+    println(exampleMutableData) // => exampleMutableData
 }
