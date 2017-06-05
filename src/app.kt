@@ -76,7 +76,7 @@ fun main(args: Array<String>) {
     */
     println("\n" + "Car Company List:")
     val carList = listOf("BMW", "Audi", "Mercedes", "Tesla")
-    println(carList.size)
+    println("size of list: " + carList.size)
     println(carList.first())
     println(carList.last())
     // Lets follow the tutorial and access the the list by index.
@@ -89,6 +89,8 @@ fun main(args: Array<String>) {
     val motorcycleMutableList = mutableListOf("Kawasaki", "Suzuki", "Honda")
     motorcycleMutableList.add("Harley-Davidson")
     motorcycleMutableList.add("Ducati")
-    println(motorcycleMutableList[1] + "\n" + motorcycleMutableList[2] + "\n" + motorcycleMutableList[3])
-    println(motorcycleMutableList[4])
+    motorcycleMutableList.add("Yamaha")
+    println("size of list: " + motorcycleMutableList.size)
+    println(motorcycleMutableList[0] + "\n" +motorcycleMutableList[1] + "\n" + motorcycleMutableList[2] + "\n" + motorcycleMutableList[3])
+    println(motorcycleMutableList[4] + "\n" + motorcycleMutableList[5])
 }
