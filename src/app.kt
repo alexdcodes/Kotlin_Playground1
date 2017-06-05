@@ -41,7 +41,7 @@ fun main(args: Array<String>) {
 
         println("\ndataCopy:" + dataCopy)
 
-    val (a, b, c) = dataCopy
+    var (a, b, c) = dataCopy
 
         println("$a $b $c")
 
@@ -57,4 +57,23 @@ fun main(args: Array<String>) {
         e --
     }
     println(exampleMutableData) // => exampleMutableData
+
+    data class anotherMutDataClassExample (var z: Int, var x: Int)
+    val exampleMutableData2 = anotherMutDataClassExample(1840, 1)
+    with (exampleMutableData2) {
+        z -= 1000
+        x += 100
+    }
+    println(exampleMutableData2)
+
+    /*
+  Lets create a list using listOf function, this is immutable -- elements will not be added or removed
+    */
+    println("\n")
+    val carList = listOf("BMW", "Audi", "Mercedes", "Tesla")
+    println(carList.size)
+    println(carList.first())
+    println(carList.last())
+    // Lets follow the tutorial and access the the list by index.
+    println(carList[1] + "\n" + carList[2])
 }
