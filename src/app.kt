@@ -36,9 +36,9 @@ fun main(args: Array<String>) {
     }
 
         println(welcome("Default User"))
-        println(userID(0))
+        println("User ID: " + userID(0))
 
-        println("\tDeclared Number: " + fooNum)
+        println("\n\tDeclared Number: " + fooNum)
     /*
   Example of DataClass, adding String, and 3 Ints
     */
@@ -105,9 +105,10 @@ fun main(args: Array<String>) {
     */
 
     println("\n" + "Map:")
-    val exampleMap = mapOf("a" to 6, "b" to 5, "c" to 9)
+    val exampleMap = mapOf("Name" to 1, "userID" to 2, "City" to 3)
     // lets access this map by the key
-    println(exampleMap["a"]) //=>6
+    println(exampleMap["Name"]) //=>1
+    println(exampleMap["userID"]) //=>2
 
     /*
         Lets create a set using setOf
@@ -116,4 +117,13 @@ fun main(args: Array<String>) {
     println("Does exampleSet contain 'Names': " + exampleSet.contains("Names")) // show true
     println("Does exampleSet contain 'Geographical_Location': " + exampleSet.contains("Geographical_Location")) // show false
 
+    /*
+    following tutorial up next:
+    Sequences represent lazy collections
+    using generateSequence function.
+    */
+    println("\n")
+    val exampleSequence = generateSequence ( 1,{ it + 1 } )
+    val x = exampleSequence.take(20).toList()
+    println(x) // => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10.....20]
 }
