@@ -103,7 +103,7 @@ fun main(args: Array<String>) {
     /*
         Lets create a mapOf
     */
-    
+
     println("\n" + "Map:")
     val exampleMap = mapOf("a" to 6, "b" to 5, "c" to 9)
     // lets access this map by the key
@@ -113,7 +113,7 @@ fun main(args: Array<String>) {
         Lets create a set using setOf
     */
     val exampleSet = setOf("Names", "Age", "Email")
-    println(exampleSet.contains("Names")) // show true
-    println(exampleSet.contains("Geographical_Location")) // show false
+    println("Does exampleSet contain 'Names': " + exampleSet.contains("Names")) // show true
+    println("Does exampleSet contain 'Geographical_Location': " + exampleSet.contains("Geographical_Location")) // show false
 
 }
