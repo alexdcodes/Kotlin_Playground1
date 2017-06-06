@@ -31,7 +31,12 @@ fun main(args: Array<String>) {
         return "\nHello, $name!\n"
     }
 
+    fun userID(id: Int = 0) : Int {
+        return id
+    }
+
         println(welcome("Default User"))
+        println(userID(0))
 
         println("\tDeclared Number: " + fooNum)
     /*
@@ -83,7 +88,7 @@ fun main(args: Array<String>) {
     println(carList[1] + "\n" + carList[2])
 
     /*
-    Lets create a mutable list using mutableListOf
+        Lets create a mutable list using mutableListOf
     */
     println("\n" + "Motorcycle Company List:")
     val motorcycleMutableList = mutableListOf("Kawasaki", "Suzuki", "Honda")
@@ -94,7 +99,19 @@ fun main(args: Array<String>) {
     println(motorcycleMutableList[0] + "\n" +motorcycleMutableList[1] + "\n" + motorcycleMutableList[2] + "\n" + motorcycleMutableList[3])
     println(motorcycleMutableList[4] + "\n" + motorcycleMutableList[5])
     println("\n")
+
+    /*
+        Lets create a mapOf
+    */
     
+    println("\n" + "Map:")
+    val exampleMap = mapOf("a" to 6, "b" to 5, "c" to 9)
+    // lets access this map by the key
+    println(exampleMap["a"]) //=>6
+
+    /*
+        Lets create a set using setOf
+    */
     val exampleSet = setOf("Names", "Age", "Email")
     println(exampleSet.contains("Names")) // show true
     println(exampleSet.contains("Geographical_Location")) // show false
